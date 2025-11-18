@@ -4,7 +4,7 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
+    <title>Yure Santos</title>
 
     <!-- Adicionando Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
@@ -20,10 +20,10 @@
     <!-- Ícones -->
     <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
     <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css">
- 
+
 </head>
 <body>
-    <!-- Navegção Principal-->
+    <!-- Navegação Principal -->
     <nav id="menu-principal">
         <div class="logo">
             <a href="index.html">Yure Santos</a>
@@ -50,26 +50,145 @@
             <li>
                 <a href="contato.html" class="active">Contato</a>
             </li>
-        </ul> 
-    </nav>    
-    
+        </ul>
+    </nav>
+
     <!-- Conteúdo Principal -->
-     <main id="contato-item">
-        <aside>
-            <h3>Informações de contato</h3>
+    <main id="conteudo-principal">
+        <h2 class="section-title">Entre em Contato</h2>
+        <p style="text-align: center; color: var(--cor-texto-suave); margin-bottom: 3rem;">
+            Estou sempre aberto a novas oportunidades e projetos interessantes. 
+            Entre em contato através do formulário abaixo ou pelas redes sociais.
+        </p>
+        
+        <div class="contato-container">
+            <!-- Informações de Contato -->
+            <aside class="contato-info">
+                <h3>Informações de Contato</h3>
+                
+                <div class="contato-item">
+                    <i class="fi fi-rr-envelope"></i>
+                    <div>
+                        <strong>Email</strong>
+                        <p><a href="mailto:yuristronda123@hotmail.com">yuristronda123@hotmail.com</a></p>
+                    </div>
+                </div>
+                
+                <div class="contato-item">
+                    <i class="fi fi-brands-github"></i>
+                    <div>
+                        <strong>GitHub</strong>
+                        <p><a href="https://github.com/zryuik" target="_blank" rel="noopener noreferrer">github.com/zryuik</a></p>
+                    </div>
+                </div>
+                
+                <div class="contato-item">
+                    <i class="fi fi-brands-linkedin"></i>
+                    <div>
+                        <strong>LinkedIn</strong>
+                        <p><a href="https://www.linkedin.com/in/yure-santos" target="_blank" rel="noopener noreferrer">linkedin.com/in/yure-santos</a></p>
+                    </div>
+                </div>
+                
+                <div class="contato-item">
+                    <i class="fi fi-brands-twitter"></i>
+                    <div>
+                        <strong>Twitter</strong>
+                        <p><a href="https://x.com/ryuk2700" target="_blank" rel="noopener noreferrer">@ryuk2700</a></p>
+                    </div>
+                </div>
+                
+                <div class="contato-item">
+                    <i class="fi fi-rr-marker"></i>
+                    <div>
+                        <strong>Localização</strong>
+                        <p>Brasil</p>
+                    </div>
+                </div>
+            </aside>
 
-            <div class="contato-item">
-                <i class="fi fi-rr-envelope"></i>
+            <!-- Formulário de Contato -->
+            <section class="formulario-contato">
+                <h3>Envie uma Mensagem</h3>
+                <form id="formContato" action="#" method="post">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo *</label>
+                        <input 
+                            type="text" 
+                            id="nome" 
+                            name="nome" 
+                            required 
+                            minlength="3"
+                            placeholder="Seu nome completo"
+                            aria-required="true"
+                        >
+                        <span class="erro">O nome deve ter pelo menos 3 caracteres.</span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            required 
+                            placeholder="seu@email.com"
+                            aria-required="true"
+                        >
+                        <span class="erro">Por favor, insira um email válido.</span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="assunto">Assunto *</label>
+                        <input 
+                            type="text" 
+                            id="assunto" 
+                            name="assunto" 
+                            required 
+                            minlength="5"
+                            placeholder="Assunto da mensagem"
+                            aria-required="true"
+                        >
+                        <span class="erro">O assunto deve ter pelo menos 5 caracteres.</span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem *</label>
+                        <textarea 
+                            id="mensagem" 
+                            name="mensagem" 
+                            required 
+                            minlength="10"
+                            placeholder="Sua mensagem aqui..."
+                            aria-required="true"
+                        ></textarea>
+                        <span class="erro">A mensagem deve ter pelo menos 10 caracteres.</span>
+                    </div>
+                    
+                    <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+                </form>
+            </section>
+        </div>
+    </main>
 
-            </div>
-        </aside>
+    <!-- Rodapé -->
+    <footer class="social-links">
+        <div class="container-social">
+            <a href="https://github.com/zryuik" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <i class="fi fi-brands-github"></i>
+                <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/yure-santos" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <i class="fi fi-brands-linkedin"></i>
+                <span>LinkedIn</span>
+            </a>
+            <a href="https://x.com/ryuk2700" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                <i class="fi fi-brands-twitter"></i>
+                <span>Twitter</span>
+            </a>
+        </div>
+        <p class="copyright">&copy; 2025 Yure Santos. Todos os direitos reservados.</p>
+    </footer>
 
-
-
-
-
-
-
-     </main>
 </body>
 </html>
