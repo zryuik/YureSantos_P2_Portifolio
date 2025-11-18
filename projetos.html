@@ -1,11 +1,255 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <title>Projetos</title>
+
+    <!-- Adicionando Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
     
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css">
+
+<body>
+
+    <!-- Navegação Principal -->
+    <nav id="menu-principal">
+        <div class="logo">
+            <a href="index.html">Yure Santos</a>
+        </div>
+        
+        <!-- Menu Mobile Toggle  -->
+        <input type="checkbox" id="menuToggle" class="menu-checkbox">
+        <label for="menuToggle" class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        
+        <ul class="menu-nav" id="menuNav">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="sobre.html">Sobre Mim</a>
+            </li>
+            <li>
+                <a href="projetos.html" class="active">Projetos</a>
+            </li>
+            <li>
+                <a href="contato.html">Contato</a>
+            </li>
+        </ul>
+    </nav>  
+
+    <!-- Conteúdo Principal -->
+    <main id="conteudo-principal">
+        <h2 class="section-title">Meus Projetos</h2>
+        <p style="text-align: center; color: var(--cor-texto-suave); margin-bottom: 3rem;">
+            Confira alguns dos projetos que desenvolvi. Cada um representa um aprendizado 
+            e uma oportunidade de aplicar novas tecnologias e conceitos.
+        </p>
+        
+        <div class="projetos-grid">
+            <!-- Projeto 1 -->
+            <article class="projeto-card">
+                <div class="projeto-imagem">
+                    <i class="fi fi-rr-globe"></i>
+                </div>
+                <div class="projeto-conteudo">
+                    <h3>Portfólio Pessoal</h3>
+                    <p>
+                        Site portfólio responsivo desenvolvido com HTML5 e CSS3,   
+                        Design moderno e profissional, com navegação intuitiva e layout 
+                        adaptável para diferentes dispositivos.
+                    </p>
+                    <div class="projeto-tecnologias">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>Responsive</span>
+                    </div>
+                    <div class="projeto-links">
+                        <a href="https://github.com/zryuik/YureSantos_P2_Portifolio" target="_blank" rel="noopener noreferrer">
+                            <i class="fi fi-brands-github"></i>
+                            Código
+                        </a>
+                        <a href="index.html">
+                            <i class="fi fi-rr-external-link"></i>
+                            Demo
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Projeto 2 -->
+            <article class="projeto-card">
+                <div class="projeto-imagem">
+                    <i class="fi fi-rr-shopping-cart"></i>
+                </div>
+                <div class="projeto-conteudo">
+                    <h3>Jogo da Cobrinha</h3>
+                    <p>
+                        Desenvolvi uma versão do famoso jogo da cobrinha (Snake), onde o jogador controla a serpente para coletar itens (“comida”) que fazem a cobra crescer. O objetivo é manter a cobra viva o maior tempo possível sem colidir com as paredes, obstaculos ou consigo mesma. (Esse projeto ainda esta em desenvolvimento)
+                    </p>
+                    <div class="projeto-tecnologias">
+                        <span>Python</span>
+                        <span>Pygame</span>
+                        
+                    </div>
+                    <div class="projeto-links">
+                        <a href="https://github.com/zryuik/cobrinha" target="_blank" rel="noopener noreferrer">
+                            <i class="fi fi-brands-github"></i>
+                            Código
+                        </a>
+                        <a href="#">
+                            <i class="fi fi-rr-external-link"></i>
+                            Demo
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Projeto 3 -->
+            <article class="projeto-card">
+                <div class="projeto-imagem">
+                    <i class="fi fi-rr-weather-cloudy"></i>
+                </div>
+                <div class="projeto-conteudo">
+                    <h3>Assistente Pessoal</h3>
+                    <p>
+                        Estou desenvolvendo um assistente pessoal por voz capaz de realizar tarefas simples do dia a dia, como tocar músicas no YouTube, informar as horas, buscar receitas e muito mais. Atualmente utilizo Python no back-end para processar comandos e a lógica do sistema, e futuramente pretendo desenvolver a interface do aplicativo em C++ para obter mais desempenho e maior controle sobre a aplicação.
+                    </p>
+                    <div class="projeto-tecnologias">
+                        <span>Python</span>
+                        <span>C++</span>
+                    </div>
+                    <div class="projeto-links">
+                        <a href="https://github.com/zryuik/projeto_jarvis" target="_blank" rel="noopener noreferrer">
+                            <i class="fi fi-brands-github"></i>
+                            Código
+                        </a>
+                        <a href="#">
+                            <i class="fi fi-rr-external-link"></i>
+                            Demo
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Projeto 4 -->
+            <article class="projeto-card">
+                <div class="projeto-imagem">
+                    <i class="fi fi-rr-tasks"></i>
+                </div>
+                <div class="projeto-conteudo">
+                    <h3>Caixa Eletrônico</h3>
+                    <p>
+                        Um dos meus primeiros scripts mais completos foi um sistema de caixa eletrônico desenvolvido em Python 3. O projeto inclui autenticação por senha antes de qualquer operação, além de funcionalidades como saque, depósito, consulta de saldo e emissão de recibo. No futuro, pretendo aprimorar esse sistema utilizando C++ ou Java para torná-lo mais robusto e eficiente.
+                    </p>
+                    <div class="projeto-tecnologias">
+                        <span>Python</span>
+                        <span>C++</span>
+                        <span>Java</span>
+                    </div>
+                    <div class="projeto-links">
+                        <a href="https://github.com/zryuik/Caixa_Eletronico" target="_blank" rel="noopener noreferrer">
+                            <i class="fi fi-brands-github"></i>
+                            Código
+                        </a>
+                        <a href="#">
+                            <i class="fi fi-rr-external-link"></i>
+                            Demo
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Projeto 5 -->
+            <article class="projeto-card">
+                <div class="projeto-imagem">
+                    <i class="fi fi-rr-calculator"></i>
+                </div>
+                <div class="projeto-conteudo">
+                    <h3>Tela de Login</h3>
+                    <p>
+                        Uma página simples de login desenvolvida utilizando HTML e CSS. Este projeto funciona como uma interface front-end para a autenticação de usuários, apresentando um design limpo e responsivo. O layout inclui campos para e-mail e senha, botão de acesso e estilização moderna para proporcionar uma boa experiência ao usuário. Futuramente, pretendo integrar esta interface a um back-end para validação real de credenciais e gerenciamento de sessões.
+                    </p>
+                    <div class="projeto-tecnologias">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        
+                    </div>
+                    <div class="projeto-links">
+                        <a href="https://github.com/zryuik/login" target="_blank" rel="noopener noreferrer">
+                            <i class="fi fi-brands-github"></i>
+                            Código
+                        </a>
+                        <a href="#">
+                            <i class="fi fi-rr-external-link"></i>
+                            Demo
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Projeto 6 -->
+            <article class="projeto-card">
+                <div class="projeto-imagem">
+                    <i class="fi fi-rr-document"></i>
+                </div>
+                <div class="projeto-conteudo">
+                    <h3>Maricá Investment Extractor</h3>
+                    <p>
+                        Este projeto foi desenvolvido como parte do Desafio P2, cujo objetivo era criar um script capaz de gerar automaticamente um arquivo CSV contendo os montantes mensais investidos pela Previdência Pública de Maricá (RJ) ao longo do ano de 2025.
+                    </p>
+                    <div class="projeto-tecnologias">
+                        <span>Python</span>
+                    </div>
+                    <div class="projeto-links">
+                        <a href="https://github.com/zryuik" target="_blank" rel="noopener noreferrer">
+                            <i class="fi fi-brands-github"></i>
+                            Código
+                        </a>
+                        <a href="#">
+                            <i class="fi fi-rr-external-link"></i>
+                            Demo
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="social-links">
+        <div class="container-social">
+            <a href="https://github.com/zryuik" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <i class="fi fi-brands-github"></i>
+                <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/yure-santos" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <i class="fi fi-brands-linkedin"></i>
+                <span>LinkedIn</span>
+            </a>
+            <a href="https://x.com/ryuk2700" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                <i class="fi fi-brands-twitter"></i>
+                <span>Twitter</span>
+            </a>
+        </div>
+        <p class="copyright">&copy; 2025 Yure Santos. Todos os direitos reservados.</p>
+    </footer>
+
+
 </body>
 </html>
