@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yure Santos</title>
-
-    <!-- Adicionando Favicon -->
+    <meta name="description" content="Portfólio de Yure Santos - Desenvolvedor de Software">
+    <title>Yure Santos - Desenvolvedor de Software</title>
+    
+    <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
-
+    
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,49 +20,50 @@
     <!-- Ícones -->
     <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
     <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css">
-
 </head>
 <body>
+    <!-- Navegação Principal -->
     <nav id="menu-principal">
         <div class="logo">
             <a href="index.html">Yure Santos</a>
         </div>
-
-        <!-- Menu Mobile Toggle -->
+        
+        <!-- Menu Mobile Toggle (Checkbox Hack) -->
         <input type="checkbox" id="menuToggle" class="menu-checkbox">
         <label for="menuToggle" class="menu-toggle">
             <span></span>
             <span></span>
             <span></span>
         </label>
-
-        <ul>
+        
+        <ul class="menu-nav" id="menuNav">
             <li>
-                <a href="index.html">Home</a>
+                <a href="index.html" class="active">Home</a>
             </li>
             <li>
                 <a href="sobre.html">Sobre Mim</a>
             </li>
             <li>
-                <a href="projetos.html">projetos</a>
+                <a href="projetos.html">Projetos</a>
             </li>
             <li>
                 <a href="contato.html">Contato</a>
             </li>
         </ul>
     </nav>
+    
     <!-- Hero Section -->
-     <header class="hero">
+    <header class="hero">
         <div class="perfil-img">
-            <img src="img/main.jpg" alt="foto do perfil">
+            <img src="img/main.jpg" alt="Foto de perfil de Yure Santos - Desenvolvedor de Software">
         </div>
-        <h1>Desenvolvedor de <span>Software</span></h1>
-        <p class="subtitulo">Transformando ideias em soluções eficientes e inovadoras.</p>
-        <a href="contato.html" class="btn-contato">Entre em contato</a>
-     </header>
+        <h1>Desenvolvedor de <span>Software</span></h1> 
+        <p class="subtitulo">Transformando ideias em soluções digitais eficientes e inovadoras.</p>
+        <a href="contato.html" class="btn-contato">Entre em Contato</a>
+    </header>
 
-     <!-- Conteudo Principal -->
-      <main class="conteudo-principal">
+    <!-- Conteúdo Principal -->
+    <main id="conteudo-principal">
         <section class="sobre-resumo">
             <h2 class="section-title">Sobre Mim</h2>
             <div class="resumo-grid">
@@ -70,33 +71,37 @@
                     <h3><i class="fi fi-rr-user"></i> Resumo</h3>
                     <p>
                         Desenvolvedor de software com foco em linguagens backend, especialmente Python e Futuramente Java, porém atualmente ampliando meus conhecimentos em HTML, CSS e JavaScript. Busco unir backend e frontend para me consolidar como desenvolvedor full stack, criando aplicações completas, modernas e eficientes.
-                    </p>
-                <div>
-                    <h3><i class="fi fi-rr-graduation-cap"> Formação</i></h3>
-                    <p>
-                        Estudante de Análise e Desenvolvimento de Sistemas, com foco em tecnologias modernas e boas práticas de desenvolvimento.
-                        Constantemente aprimorando conhecimentos por meio de cursos, projetos práticos e estudos autodidatas, buscando evolução contínua na área de software.
+
                     </p>
                 </div>
-                    <h3><i class="fi fi-rr-book-alt"></i> Cursos</h3>
+                <div>
+                    <h3><i class="fi fi-rr-graduation-cap"></i> Formação</h3>
                     <p>
-                       Python 3 - Curso em Video 
-                       Java Básico - Curso em Video
-                       HTML5 e CSS3 - Curso em Video
-                       MySQL - Curso em Video 
-                       Algoritmo - Curso em Video 
+                        Estudante de Análise e Desenvolvimento de Sistemas, com foco em tecnologias modernas e boas práticas de desenvolvimento.
+                        <p>
+                            Constantemente aprimorando conhecimentos por meio de cursos, projetos práticos e estudos autodidatas, buscando evolução contínua na área de software.
+                        </p>
+                    </p>
+                </div>
+                <div>
+                    <h3><i class="fi fi-rr-book-alt"></i> Cursos</h3>
+                    
+                       <p>Python 3 - Curso em Video</p> 
+                       <p>Java Básico - Curso em Video</p>
+                       <p>HTML5 e CSS3 - Curso em Video</p>
+                       <p>MySQL - Curso em Video </p>
+                       <p>Algoritmo - Curso em Video</p> 
                     </p>
                 </div>
             </div>
             <div class="ver-mais">
-                <a href="sobre.html" class="btn-secundario">Ver Perfil Completo</a>  
+                <a href="sobre.html" class="btn-secundario">Ver Perfil Completo</a>
             </div>
         </section>
-      </main>
+    </main>
 
-
-      <!-- Footer (Rodapézin) -->
-      <footer class="social-links">
+    <!-- Rodapé -->
+    <footer class="social-links">
         <div class="container-social">
             <a href="https://github.com/zryuik" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <i class="fi fi-brands-github"></i>
@@ -112,6 +117,7 @@
             </a>
         </div>
         <p class="copyright">&copy; 2025 Yure Santos. Todos os direitos reservados.</p>
-      </footer> 
+    </footer>
+
 </body>
 </html>
