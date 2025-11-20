@@ -9,7 +9,7 @@
     --branco: #f5f5f5;
     --accent: #089bfd;
     --accent-hover: #ffffff;
-    --accent-light: rgba(255, 107, 53, 0.15);
+    --accent-light: #089bfd;
     --destaque: #4ecdc4;
     --destaque-hover: #6eddd5;
     
@@ -423,7 +423,7 @@ main {
 .resumo-grid > div:hover,
 .projeto-card:hover {
     transform: translateY(-8px);
-    border-color: rgba(255, 107, 53, 0.3);
+    border-color: var(--accent);
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
 }
 
@@ -538,12 +538,12 @@ main {
 }
 
 .projeto-tecnologias span {
-    background: rgba(255, 107, 53, 0.15);
+    background: rgba(7, 93, 206, 0.15);
     color: var(--accent);
     padding: 0.4rem 0.9rem;
     border-radius: 0;
     font-size: 0.8rem;
-    border: 1px solid rgba(255, 107, 53, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-weight: 500;
@@ -595,7 +595,7 @@ main {
 
 .sobre-foto img:hover {
     transform: scale(1.02);
-    box-shadow: 0 12px 48px rgba(255, 107, 53, 0.3);
+    box-shadow: 0 12px 48px var(--accent);
 }
 
 .sobre-texto h3 {
@@ -634,7 +634,8 @@ main {
     font-size: 1.5rem;
     font-weight: 600;
     padding-bottom: var(--espaco-sm);
-    border-bottom: 2px solid rgba(255, 107, 53, 0.3);
+    border-bottom: 2px solid var(--accent);
+    
 }
 
 .contato-item {
